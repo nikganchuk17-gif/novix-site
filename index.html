@@ -212,7 +212,32 @@ footer{padding:36px 0 46px;color:var(--mut);font-size:13px;text-align:center}
  nav .btn{margin-top:18px}
  section{padding:80px 0}
 }
-@media(max-width:520px){.grid4{grid-template-columns:1fr}.wrap{padding:0 18px}}
+@media(max-width:620px){
+ .wrap{padding:0 16px}
+ section{padding:60px 0}
+ h2{font-size:30px;margin-bottom:28px}
+ .grid4{grid-template-columns:repeat(2,1fr);gap:12px}
+ .card{padding:8px 8px 14px;border-radius:22px}
+ .card .media{border-radius:16px}
+ .card h3{font-size:15px;line-height:1.3;margin:12px 6px 10px}
+ .card .row{margin:0 6px;gap:10px}
+ .price{font-size:20px}
+ .price.ph{font-size:14px}
+ .card .row .btn{padding:11px 10px;font-size:14px}
+ .tabs{gap:8px;margin-bottom:22px}
+ .tab{flex:1;text-align:center;padding:12px 14px;font-size:15px}
+ .grid3{gap:12px}
+ .adv{padding:20px}.adv .ic{width:44px;height:44px;margin-bottom:18px;border-radius:14px}.adv h3{font-size:19px;margin-bottom:6px}.adv p{font-size:14px}
+ .adv-rows{margin-top:16px}
+ .rv-card{padding:24px 22px 20px}
+ .final{padding:64px 20px;border-radius:30px}.final p{font-size:16px}
+ .ticker-track span{font-size:11px;gap:18px;padding-right:18px}
+ .aurora i:nth-child(3){display:none}
+ .modal{align-items:flex-end;padding:0}
+ .modal-card{width:100%;border-radius:28px 28px 0 0;padding:30px 22px calc(26px + env(safe-area-inset-bottom,0px))}
+}
+@media(max-width:340px){.grid4{grid-template-columns:1fr}}
+@media(hover:none){.card:hover,.tile:hover,.perk:hover,.rv-card:hover,.adv:hover{transform:none}}
 @media(prefers-reduced-motion:reduce){.aurora i,.logo-img,.foot-logo,.bento .tile,.t-airpods img,.final .btn,.ticker-track{animation:none!important}.pop{animation:none}html{scroll-behavior:auto}.rv{transition:none;opacity:1;transform:none}}
 </style>
 </head>
